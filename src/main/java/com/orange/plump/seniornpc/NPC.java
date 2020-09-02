@@ -265,15 +265,6 @@ public class NPC {
 				Class<?> enumClass = this.getNMSClass("EntityPose");
 				Enum e = Enum.valueOf((Class) enumClass, "STANDING");
 
-//				Method[] rawMethods = this.getNMSClass("Entity").getDeclaredMethods();
-//				for (Method method : rawMethods) {
-//					if (method.getName().equals("setPose")) {
-//						method.setAccessible(true);
-//						method.invoke(npc, e);
-//					}
-//				}
-
-
 				Class<?> dataWatcherClass = this.getNMSClass("DataWatcher");
 				Constructor<?> dataWatcherClassConstructor = dataWatcherClass.getConstructor(getNMSClass("Entity"));
 				Object dataWatcher = dataWatcherClassConstructor.newInstance(npc);
