@@ -1,0 +1,8 @@
+main: "com.orange.plump.seniornpc.SeniorNPC"
+name: "SeniorNPC"
+version: "1.0"
+author: "PlumpOrange Senior Team"
+description: "Trial plugin for Senior Team"
+commands:
+  seniornpc:
+    description: Main command
